@@ -1,0 +1,415 @@
+country;education_expenditure;youth_unemployment_rate;net_migration_rate;iso_code;region;income_group;lending_category;name;alpha.2;alpha.3;country.code;iso_3166.2;continent;sub.region;intermediate.region;region.code;sub.region.code;intermediate.region.code
+1;Cuba;.;Syria;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+2;Micronesia,;.;British;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+3;Solomon;.;Luxembourg;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+4;Montserrat;.;Cayman;.;.;.;.;Afghanistan;AF;AFG;4;ISO 3166-2:AF;Asia;Southern Asia;;142;34;.
+5;Norway;.;Singapore;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+6;Denmark;.;Anguilla;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+7;Iceland;.;Bahrain;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+8;Sierra;.;Turks;.;.;.;.;Albania;AL;ALB;8;ISO 3166-2:AL;Europe;Southern Europe;;150;39;.
+9;Belize;.;Aruba;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+10;Sweden;.;Monaco;.;.;.;.;Antarctica;AQ;ATA;10;ISO 3166-2:AQ;;;;.;.;.
+11;Bolivia;.;Australia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+12;Eswatini;.;New;.;.;.;.;Algeria;DZ;DZA;12;ISO 3166-2:DZ;Africa;Northern Africa;;2;15;.
+13;Costa;.;Cyprus;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+14;Lesotho;.;United;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+15;Bhutan;.;Spain;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+16;Oman;.;Malta;.;.;.;.;American Samoa;AS;ASM;16;ISO 3166-2:AS;Oceania;Polynesia;;9;61;.
+17;Timor-Leste;.;San;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+18;Tunisia;.;Qatar;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+19;South;.;Sint;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+20;Belgium;.;Canada;.;.;.;.;Andorra;AD;AND;20;ISO 3166-2:AD;Europe;Southern Europe;;150;39;.
+21;Finland;.;Isle;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+22;Brazil;.;Sweden;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+23;New;.;Djibouti;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+24;Honduras;.;Liechtenstein;.;.;.;.;Angola;AO;AGO;24;ISO 3166-2:AO;Africa;Sub-Saharan Africa;Middle Africa;2;202;17
+25;Israel;.;Belgium;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+26;Puerto;.;Saudi;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+27;Kyrgyzstan;.;Switzerland;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+28;Zimbabwe;.;Norway;.;.;.;.;Antigua and Barbuda;AG;ATG;28;ISO 3166-2:AG;Americas;Latin America and the Caribbean;Caribbean;19;419;29
+29;Cyprus;.;Gabon;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+30;Saint;.;Ireland;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+2018;;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+31;Dominica;.;New;.;.;.;.;Azerbaijan;AZ;AZE;31;ISO 3166-2:AZ;Asia;Western Asia;;142;145;.
+32;Argentina;.;Austria;.;.;.;.;Argentina;AR;ARG;32;ISO 3166-2:AR;Americas;Latin America and the Caribbean;South America;19;419;5
+33;Aruba;.;Iceland;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+34;France;.;Macau;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+35;Guyana;.;Italy;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+36;Mozambique;.;United;.;.;.;.;Australia;AU;AUS;36;ISO 3166-2:AU;Oceania;Australia and New Zealand;;9;53;.
+37;Austria;.;Botswana;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+38;Burkina;.;Denmark;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+39;Chile;.;Finland;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+40;Moldova;.;United;.;.;.;.;Austria;AT;AUT;40;ISO 3166-2:AT;Europe;Western Europe;;150;155;.
+41;Togo;.;Brunei;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+42;Ukraine;.;Czechia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+43;United;.;Jersey;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+44;Canada;.;Korea,;.;.;.;.;Bahamas;BS;BHS;44;ISO 3166-2:BS;Americas;Latin America and the Caribbean;Caribbean;19;419;29
+45;Gaza;.;Ukraine;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+46;Kenya;.;Antigua;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+47;Uzbekistan;.;Israel;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+48;West;.;Guernsey;.;.;.;.;Bahrain;BH;BHR;48;ISO 3166-2:BH;Asia;Western Asia;;142;145;.
+49;Cabo;.;Netherlands;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+50;Jamaica;.;Hong;.;.;.;.;Bangladesh;BD;BGD;50;ISO 3166-2:BD;Asia;Southern Asia;;142;34;.
+51;Netherlands;.;Russia;.;.;.;.;Armenia;AM;ARM;51;ISO 3166-2:AM;Asia;Western Asia;;142;145;.
+52;Tajikistan;.;Bermuda;.;.;.;.;Barbados;BB;BRB;52;ISO 3166-2:BB;Americas;Latin America and the Caribbean;Caribbean;19;419;29
+53;Australia;.;Germany;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+54;Burundi;.;Slovenia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+55;Nepal;.;Hungary;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+56;Sao;.;Cote;.;.;.;.;Belgium;BE;BEL;56;ISO 3166-2:BE;Europe;Western Europe;;150;155;.
+57;Switzerland;.;Saint;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+58;Ecuador;.;France;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+59;Estonia;.;Seychelles;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+60;Portugal;.;Greece;.;.;.;.;Bermuda;BM;BMU;60;ISO 3166-2:BM;Americas;Northern America;;19;21;.
+61;United;.;Palau;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+62;Uruguay;.;Costa;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+63;Curacao;.;Taiwan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+64;Germany;.;Belarus;.;.;.;.;Bhutan;BT;BTN;64;ISO 3166-2:BT;Asia;Southern Asia;;142;34;.
+65;Belarus;.;Suriname;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+66;Malta;.;Kazakhstan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+67;Senegal;.;Macedonia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+68;Slovenia;.;Benin;.;.;.;.;Bolivia;BO;BOL;68;ISO 3166-2:BO;Americas;Latin America and the Caribbean;South America;19;419;5
+69;Cook;.;Chile;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+70;Ethiopia;.;Portugal;.;.;.;.;Bosnia And Herzegovina;BA;BIH;70;ISO 3166-2:BA;Europe;Southern Europe;;150;39;.
+71;Hungary;.;Slovakia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+72;Malawi;.;South;.;.;.;.;Botswana;BW;BWA;72;ISO 3166-2:BW;Africa;Sub-Saharan Africa;Southern Africa;2;202;18
+73;Mauritius;.;Georgia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+74;Russia;.;Andorra;.;.;.;.;Bouvet Island;BV;BVT;74;ISO 3166-2:BV;Americas;Latin America and the Caribbean;South America;19;419;5
+75;Poland;.;Azerbaijan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+76;Zambia;.;Bahamas,;.;.;.;.;Brazil;BR;BRA;76;ISO 3166-2:BR;Americas;Latin America and the Caribbean;South America;19;419;5
+77;Colombia;.;Bhutan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+78;Mexico;.;Central;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+79;Vanuatu;.;Ecuador;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+80;Barbados;.;Equatorial;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+81;Brunei;.;Faroe;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+82;Latvia;.;Guinea;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+83;Nicaragua;.;Guyana;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+84;Seychelles;.;India;.;.;.;.;Belize;BZ;BLZ;84;ISO 3166-2:BZ;Americas;Latin America and the Caribbean;Central America;19;419;13
+85;Korea,;.;Japan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+86;Turkey;.;Korea,;.;.;.;.;British Indian Ocean Territory;IO;IOT;86;ISO 3166-2:IO;Africa;Sub-Saharan Africa;Eastern Africa;2;202;14
+87;Malaysia;.;Madagascar;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+88;Samoa;.;Malawi;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+89;Spain;.;Mauritius;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+90;Vietnam;.;Montserrat;.;.;.;.;Solomon Islands;SB;SLB;90;ISO 3166-2:SB;Oceania;Melanesia;;9;54;.
+91;Afghanistan;.;Namibia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+92;Bulgaria;.;Papua;.;.;.;.;Virgin Islands (British);VG;VGB;92;ISO 3166-2:VG;Americas;Latin America and the Caribbean;Caribbean;19;419;29
+93;Maldives;.;Saint;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+94;Mongolia;.;Serbia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+95;Thailand;.;Thailand;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+96;Ghana;.;Togo;.;.;.;.;Brunei Darussalam;BN;BRN;96;ISO 3166-2:BN;Asia;South-eastern Asia;;142;35;.
+97;Iran;.;Zambia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+98;Italy;.;Afghanistan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+99;Croatia;.;Argentina;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+100;Czechia;.;Brazil;.;.;.;.;Bulgaria;BG;BGR;100;ISO 3166-2:BG;Europe;Eastern Europe;;150;151;.
+101;Fiji;.;Chad;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+102;Slovakia;.;Panama;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+103;Hong;.;Paraguay;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+104;India;.;Angola;.;.;.;.;Myanmar;MM;MMR;104;ISO 3166-2:MM;Asia;South-eastern Asia;;142;35;.
+105;Lithuania;.;Ethiopia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+106;Mali;.;Kenya;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+107;Peru;.;Nigeria;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+108;Albania;.;Romania;.;.;.;.;Burundi;BI;BDI;108;ISO 3166-2:BI;Africa;Sub-Saharan Africa;Eastern Africa;2;202;14
+109;Djibouti;.;South;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+110;El;.;Yemen;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+111;Indonesia;.;Barbados;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+112;Luxembourg;.;Bolivia;.;.;.;.;Belarus;BY;BLR;112;ISO 3166-2:BY;Europe;Eastern Europe;;150;151;.
+113;San;.;Bulgaria;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+114;Serbia;.;Cambodia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+115;Congo,;.;Cameroon;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+116;Georgia;.;Egypt;.;.;.;.;Cambodia;KH;KHM;116;ISO 3166-2:KH;Asia;South-eastern Asia;;142;35;.
+117;Ireland;.;Iran;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+118;Niger;.;Malaysia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+119;Angola;.;Poland;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+120;Paraguay;.;Vietnam;.;.;.;.;Cameroon;CM;CMR;120;ISO 3166-2:CM;Africa;Sub-Saharan Africa;Middle Africa;2;202;17
+121;Tanzania;.;Bosnia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+122;Cote;.;China;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+123;Saint;.;Oman;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+124;Andorra;.;Sudan;.;.;.;.;Canada;CA;CAN;124;ISO 3166-2:CA;Americas;Northern America;;19;21;.
+125;Grenada;.;Tanzania;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+126;Guatemala;.;Iraq;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+127;Japan;.;Burkina;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+128;Panama;.;Cabo;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+129;Cameroon;.;Colombia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+130;Jordan;.;French;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+131;Namibia;.;Libya;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+132;Romania;.;Niger;.;.;.;.;Cabo Verde;CV;CPV;132;ISO 3166-2:CV;Africa;Sub-Saharan Africa;Western Africa;2;202;11
+133;Rwanda;.;Burundi;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+134;Turkmenistan;.;Mauritania;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+135;Benin;.;Mongolia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+136;Laos;.;Algeria;.;.;.;.;Cayman Islands;KY;CYM;136;ISO 3166-2:KY;Americas;Latin America and the Caribbean;Caribbean;19;419;29
+137;Pakistan;.;Congo,;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+138;Singapore;.;Congo,;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+139;Turks;.;Pakistan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+140;Haiti;.;Uruguay;.;.;.;.;Central African Republic;CF;CAF;140;ISO 3166-2:CF;Africa;Sub-Saharan Africa;Middle Africa;2;202;17
+141;Madagascar;.;Belize;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+142;Armenia;.;Croatia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+143;Gabon;.;Laos;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+144;Macau;.;Indonesia;.;.;.;.;Sri Lanka;LK;LKA;144;ISO 3166-2:LK;Asia;Southern Asia;;142;34;.
+145;Qatar;.;Tajikistan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+146;Kazakhstan;.;Sierra;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+147;Liberia;.;Curacao;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+148;Liechtenstein;.;Senegal;.;.;.;.;Chad;TD;TCD;148;ISO 3166-2:TD;Africa;Sub-Saharan Africa;Middle Africa;2;202;17
+149;Saint;.;Sri;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+150;Azerbaijan;.;Vanuatu;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+151;British;.;Burma;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+152;Chad;.;Honduras;.;.;.;.;Chile;CL;CHL;152;ISO 3166-2:CL;Americas;Latin America and the Caribbean;South America;19;419;5
+153;Comoros;.;Tunisia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+154;Lebanon;.;Gambia,;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+155;Gambia,;.;Ghana;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+156;Bahrain;.;Solomon;.;.;.;.;China;CN;CHN;156;ISO 3166-2:CN;Asia;Eastern Asia;;142;30;.
+157;Guinea;.;Guatemala;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+158;Cambodia;.;Mozambique;.;.;.;.;Taiwan;TW;TWN;158;ISO 3166-2:TW;Asia;Eastern Asia;;142;30;.
+159;Guinea-Bissau;.;Saint;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+160;Sri;.;Turkmenistan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+161;Uganda;.;Kosovo;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+162;Burma;.;Peru;.;.;.;.;Christmas Island;CX;CXR;162;ISO 3166-2:CX;Oceania;Australia and New Zealand;;9;53;.
+163;Mauritania;.;Philippines;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+164;Papua;.;Haiti;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+165;Bermuda;.;Mexico;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+166;Congo,;.;Morocco;.;.;.;.;Cocos (Keeling) Islands;CC;CCK;166;ISO 3166-2:CC;Oceania;Australia and New Zealand;;9;53;.
+2017;;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+167;Monaco;.;Uzbekistan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+168;South;.;Comoros;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+169;Bangladesh;.;Nicaragua;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+170;Central;.;Grenada;.;.;.;.;Colombia;CO;COL;170;ISO 3166-2:CO;Americas;Latin America and the Caribbean;South America;19;419;5
+french polynesia;.;56.7;.;PYF;East Asia & Pacific;High income;.;.;.;.;.;.;.;.;.;.;.;.
+kosovo;.;55.4;.;XKX;Europe & Central Asia;Upper middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+south africa;.;53.4;.;ZAF;Sub-Saharan Africa;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+libya;.;48.7;.;LBY;Middle East & North Africa;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+eswatini;.;47.1;.;SWZ;Sub-Saharan Africa;Lower middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+saint lucia;.;46.2;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+macedonia;.;45.4;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+gaza strip;.;42.2;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+west bank;.;42.2;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+malawi;.;40.5;.;MWI;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+greece;.;39.9;.;GRC;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+angola;.;39.4;.;AGO;Sub-Saharan Africa;Lower middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+algeria;.;39.3;.;DZA;Middle East & North Africa;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+south sudan;.;38.6;.;SSD;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+new caledonia;.;38.4;.;NCL;East Asia & Pacific;High income;.;.;.;.;.;.;.;.;.;.;.;.
+namibia;.;38;.;NAM;Sub-Saharan Africa;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+armenia;.;36.3;.;ARM;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+botswana;.;36;.;BWA;Sub-Saharan Africa;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+syria;.;35.8;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+gabon;.;35.7;.;GAB;Sub-Saharan Africa;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+jordan;.;35.6;.;JOR;Middle East & North Africa;Lower middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+tunisia;.;35;.;TUN;Middle East & North Africa;Lower middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+lesotho;.;34.4;.;LSO;Sub-Saharan Africa;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+spain;.;34.3;.;ESP;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+bosnia and herzegovina;.;33.8;.;BIH;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+italy;.;32.2;.;ITA;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+albania;.;31.9;.;ALB;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+samoa;.;31.9;.;WSM;East Asia & Pacific;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+georgia;.;29.9;.;GEO;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+serbia;.;29.7;.;SRB;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+barbados;.;29.6;.;BRB;Latin America & Caribbean;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+egypt;.;29.6;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+guam;.;29.4;.;GUM;East Asia & Pacific;High income;.;.;.;.;.;.;.;.;.;.;.;.
+montenegro;.;29.4;.;MNE;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+bermuda;.;29.3;.;BMU;North America;High income;.;.;.;.;.;.;.;.;.;.;.;.
+curacao;.;29.3;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+brunei;.;28.9;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+saudi arabia;.;28.8;.;SAU;Middle East & North Africa;High income;.;.;.;.;.;.;.;.;.;.;.;.
+brazil;.;28.5;.;BRA;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+cabo verde;.;27.8;.;CPV;Sub-Saharan Africa;Lower middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+iran;.;27.6;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+san marino;.;27.4;.;SMR;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+monaco;.;26.6;.;MCO;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+nauru;.;26.6;.;NRU;East Asia & Pacific;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+puerto rico;.;26.6;.;PRI;Latin America & Caribbean;High income;.;.;.;.;.;.;.;.;.;.;.;.
+uruguay;.;25.9;.;URY;Latin America & Caribbean;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+bahamas the;.;25.8;.;BHS;Latin America & Caribbean;High income;.;.;.;.;.;.;.;.;.;.;.;.
+iraq;.;25.6;.;IRQ;Middle East & North Africa;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+ethiopia;.;25.2;.;ETH;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+yemen;.;24.5;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+jamaica;.;24.2;.;JAM;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+zambia;.;24;.;ZMB;Sub-Saharan Africa;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+mauritius;.;23.9;.;MUS;Sub-Saharan Africa;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+argentina;.;23.7;.;ARG;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+croatia;.;23.7;.;HRV;Europe & Central Asia;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+india;.;22.5;.;IND;South Asia;Lower middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+morocco;.;22.2;.;MAR;Middle East & North Africa;Lower middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+guyana;.;21.5;.;GUY;Latin America & Caribbean;High income;IDA;.;.;.;.;.;.;.;.;.;.;.
+nepal;.;21.4;.;NPL;South Asia;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+sri lanka;.;21;.;LKA;South Asia;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+france;.;20.8;.;FRA;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+sao tome and principe;.;20.8;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+costa rica;.;20.6;.;CRI;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+rwanda;.;20.6;.;RWA;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+tuvalu;.;20.6;.;TUV;East Asia & Pacific;Upper middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+portugal;.;20.3;.;PRT;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+cyprus;.;20.2;.;CYP;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+turkey;.;20.2;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+comoros;.;19.5;.;COM;Sub-Saharan Africa;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+micronesia federated states of;.;18.9;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+colombia;.;18.5;.;COL;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+laos;.;18.2;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+chile;.;18.1;.;CHL;Latin America & Caribbean;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+ukraine;.;17.9;.;UKR;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+afghanistan;.;17.6;.;AFG;South Asia;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+kiribati;.;17.1;.;KIR;East Asia & Pacific;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+finland;.;17;.;FIN;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+russia;.;17;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+mali;.;16.9;.;MLI;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+mongolia;.;16.8;.;MNG;East Asia & Pacific;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+sweden;.;16.8;.;SWE;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+indonesia;.;16.5;.;IDN;East Asia & Pacific;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+zimbabwe;.;16.5;.;ZWE;Sub-Saharan Africa;Lower middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+romania;.;16.2;.;ROU;Europe & Central Asia;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+maldives;.;15.9;.;MDV;South Asia;Upper middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+belgium;.;15.8;.;BEL;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+fiji;.;15.4;.;FJI;East Asia & Pacific;Upper middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+kuwait;.;15.4;.;KWT;Middle East & North Africa;High income;.;.;.;.;.;.;.;.;.;.;.;.
+belize;.;15.3;.;BLZ;Latin America & Caribbean;Upper middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+mauritania;.;15.2;.;MRT;Sub-Saharan Africa;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+slovakia;.;14.9;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+uganda;.;14.8;.;UGA;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+peru;.;14.7;.;PER;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+venezuela;.;14.6;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+paraguay;.;14.5;.;PRY;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+kyrgyzstan;.;14.2;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+luxembourg;.;14.2;.;LUX;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+cayman islands;.;13.8;.;CYM;Latin America & Caribbean;High income;.;.;.;.;.;.;.;.;.;.;.;.
+ireland;.;13.8;.;IRL;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+nigeria;.;13.8;.;NGA;Sub-Saharan Africa;Lower middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+oman;.;13.7;.;OMN;Middle East & North Africa;High income;.;.;.;.;.;.;.;.;.;.;.;.
+dominican republic;.;13.5;.;DOM;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+azerbaijan;.;13.4;.;AZE;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+suriname;.;13.4;.;SUR;Latin America & Caribbean;Upper middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+timorleste;.;13.2;.;TLS;East Asia & Pacific;Lower middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+gambia the;.;13.1;.;GMB;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+bangladesh;.;12.8;.;BGD;South Asia;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+bulgaria;.;12.7;.;BGR;Europe & Central Asia;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+latvia;.;12.2;.;LVA;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+australia;.;11.8;.;AUS;East Asia & Pacific;High income;.;.;.;.;.;.;.;.;.;.;.;.
+estonia;.;11.8;.;EST;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+poland;.;11.7;.;POL;Europe & Central Asia;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+seychelles;.;11.6;.;SYC;Sub-Saharan Africa;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+new zealand;.;11.5;.;NZL;East Asia & Pacific;High income;.;.;.;.;.;.;.;.;.;.;.;.
+united kingdom;.;11.3;.;GBR;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+canada;.;11.1;.;CAN;North America;High income;.;.;.;.;.;.;.;.;.;.;.;.
+lithuania;.;11.1;.;LTU;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+marshall islands;.;11;.;MHL;East Asia & Pacific;Upper middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+bhutan;.;10.7;.;BTN;South Asia;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+honduras;.;10.7;.;HND;Latin America & Caribbean;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+belarus;.;10.6;.;BLR;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+malaysia;.;10.5;.;MYS;East Asia & Pacific;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+hungary;.;10.2;.;HUN;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+korea south;.;10.2;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+panama;.;10.2;.;PAN;Latin America & Caribbean;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+isle of man;.;10.1;.;IMN;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+norway;.;9.7;.;NOR;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+el salvador;.;9.6;.;SLV;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+austria;.;9.4;.;AUT;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+denmark;.;9.4;.;DNK;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+sierra leone;.;9.4;.;SLE;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+ghana;.;9.1;.;GHA;Sub-Saharan Africa;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+malta;.;9.1;.;MLT;Middle East & North Africa;High income;.;.;.;.;.;.;.;.;.;.;.;.
+singapore;.;9.1;.;SGP;East Asia & Pacific;High income;.;.;.;.;.;.;.;.;.;.;.;.
+slovenia;.;8.8;.;SVN;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+burkina faso;.;8.7;.;BFA;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+congo democratic republic of the;.;8.7;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+hong kong;.;8.7;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+trinidad and tobago;.;8.7;.;TTO;Latin America & Caribbean;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+united states;.;8.6;.;USA;North America;High income;.;.;.;.;.;.;.;.;.;.;.;.
+nicaragua;.;8.5;.;NIC;Latin America & Caribbean;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+senegal;.;8.1;.;SEN;Sub-Saharan Africa;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+ecuador;.;7.9;.;ECU;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+switzerland;.;7.9;.;CHE;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+pakistan;.;7.8;.;PAK;South Asia;Lower middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+kenya;.;7.4;.;KEN;Sub-Saharan Africa;Lower middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+moldova;.;7.4;.;MDA;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+mozambique;.;7.4;.;MOZ;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+israel;.;7.2;.;ISR;Middle East & North Africa;High income;.;.;.;.;.;.;.;.;.;.;.;.
+netherlands;.;7.2;.;NLD;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+bolivia;.;6.9;.;BOL;Latin America & Caribbean;Lower middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+mexico;.;6.9;.;MEX;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+united arab emirates;.;6.9;.;ARE;Middle East & North Africa;High income;.;.;.;.;.;.;.;.;.;.;.;.
+vietnam;.;6.9;.;VNM;East Asia & Pacific;Lower middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+czechia;.;6.7;.;CZE;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+philippines;.;6.7;.;PHL;East Asia & Pacific;Lower middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+cameroon;.;6.3;.;CMR;Sub-Saharan Africa;Lower middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+germany;.;6.2;.;DEU;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+cuba;.;6.1;.;CUB;Latin America & Caribbean;Upper middle income;.;.;.;.;.;.;.;.;.;.;.;.
+iceland;.;6.1;.;ISL;Europe & Central Asia;High income;.;.;.;.;.;.;.;.;.;.;.;.
+benin;.;5.6;.;BEN;Sub-Saharan Africa;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+palau;.;5.6;.;PLW;East Asia & Pacific;High income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+cote divoire;.;5.5;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+bahrain;.;5.3;.;BHR;Middle East & North Africa;High income;.;.;.;.;.;.;.;.;.;.;.;.
+macau;.;5.3;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+guatemala;.;5;.;GTM;Latin America & Caribbean;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+tanzania;.;3.9;.;TZA;Sub-Saharan Africa;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+togo;.;3.9;.;TGO;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+kazakhstan;.;3.8;.;KAZ;Europe & Central Asia;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+thailand;.;3.7;.;THA;East Asia & Pacific;Upper middle income;IBRD;.;.;.;.;.;.;.;.;.;.;.
+japan;.;3.6;.;JPN;East Asia & Pacific;High income;.;.;.;.;.;.;.;.;.;.;.;.
+papua new guinea;.;3.6;.;PNG;East Asia & Pacific;Lower middle income;Blend;.;.;.;.;.;.;.;.;.;.;.
+burundi;.;2.9;.;BDI;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+liberia;.;2.3;.;LBR;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+burma;.;2;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+solomon islands;.;1.3;.;SLB;East Asia & Pacific;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+cambodia;.;1.1;.;KHM;East Asia & Pacific;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+guinea;.;1;.;GIN;Sub-Saharan Africa;Lower middle income;IDA;.;.;.;.;.;.;.;.;.;.;.
+madagascar;.;1;.;MDG;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+niger;.;0.7;.;NER;Sub-Saharan Africa;Low income;IDA;.;.;.;.;.;.;.;.;.;.;.
+qatar;.;0.4;.;QAT;Middle East & North Africa;High income;.;.;.;.;.;.;.;.;.;.;.;.
+country;.;.;Comparison;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+est;.;.;;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+cunha;.;.;0.00;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+2020;.;.;est.;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+171;.;.;Dominican;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+172;.;.;Kiribati;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+173;.;.;Liberia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+174;.;.;Bangladesh;.;.;.;.;Comoros;KM;COM;174;ISO 3166-2:KM;Africa;Sub-Saharan Africa;Eastern Africa;2;202;14
+175;.;.;Saint;.;.;.;.;Mayotte;YT;MYT;175;ISO 3166-2:YT;Africa;Sub-Saharan Africa;Eastern Africa;2;202;14
+176;.;.;Estonia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+177;.;.;Nepal;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+178;.;.;Albania;.;.;.;.;Congo;CG;COG;178;ISO 3166-2:CG;Africa;Sub-Saharan Africa;Middle Africa;2;202;17
+179;.;.;Gibraltar;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+180;.;.;Kuwait;.;.;.;.;Congo (Democratic Republic Of The);CD;COD;180;ISO 3166-2:CD;Africa;Sub-Saharan Africa;Middle Africa;2;202;17
+181;.;.;Rwanda;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+182;.;.;Venezuela;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+183;.;.;Uganda;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+184;.;.;Cuba;.;.;.;.;Cook Islands;CK;COK;184;ISO 3166-2:CK;Oceania;Polynesia;;9;61;.
+185;.;.;Guinea-Bissau;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+186;.;.;Somalia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+187;.;.;Mali;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+188;.;.;Timor-Leste;.;.;.;.;Costa Rica;CR;CRI;188;ISO 3166-2:CR;Americas;Latin America and the Caribbean;Central America;19;419;13
+189;.;.;West;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+190;.;.;Turkey;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+191;.;.;Wallis;.;.;.;.;Croatia;HR;HRV;191;ISO 3166-2:HR;Europe;Southern Europe;;150;39;.
+192;.;.;Marshall;.;.;.;.;Cuba;CU;CUB;192;ISO 3166-2:CU;Americas;Latin America and the Caribbean;Caribbean;19;419;29
+193;.;.;Gaza;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+194;.;.;El;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+195;.;.;Montenegro;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+196;.;.;Kyrgyzstan;.;.;.;.;Cyprus;CY;CYP;196;ISO 3166-2:CY;Asia;Western Asia;;142;145;.
+197;.;.;Zimbabwe;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+198;.;.;Dominica;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+199;.;.;Trinidad;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+200;.;.;Armenia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+201;.;.;Latvia;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+202;.;.;Lithuania;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+203;.;.;Greenland;.;.;.;.;Czech Republic;CZ;CZE;203;ISO 3166-2:CZ;Europe;Eastern Europe;;150;151;.
+204;.;.;Saint;.;.;.;.;Benin;BJ;BEN;204;ISO 3166-2:BJ;Africa;Sub-Saharan Africa;Western Africa;2;202;11
+205;.;.;Lesotho;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+206;.;.;Fiji;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+207;.;.;Tuvalu;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+208;.;.;Eswatini;.;.;.;.;Denmark;DK;DNK;208;ISO 3166-2:DK;Europe;Northern Europe;;150;154;.
+209;.;.;Saint;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+210;.;.;Virgin;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+211;.;.;Saint;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+212;.;.;Sao;.;.;.;.;Dominica;DM;DMA;212;ISO 3166-2:DM;Americas;Latin America and the Caribbean;Caribbean;19;419;29
+213;.;.;Samoa;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+214;.;.;Moldova;.;.;.;.;Dominican Republic;DO;DOM;214;ISO 3166-2:DO;Americas;Latin America and the Caribbean;Caribbean;19;419;29
+215;.;.;Jamaica;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+216;.;.;Guam;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+217;.;.;Jordan;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+218;.;.;Nauru;.;.;.;.;Ecuador;EC;ECU;218;ISO 3166-2:EC;Americas;Latin America and the Caribbean;South America;19;419;5
+219;.;.;Eritrea;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+220;.;.;Maldives;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+221;.;.;Puerto;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+222;.;.;Northern;.;.;.;.;El Salvador;SV;SLV;222;ISO 3166-2:SV;Americas;Latin America and the Caribbean;Central America;19;419;13
+223;.;.;Tonga;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+224;.;.;Micronesia,;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+225;.;.;American;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
+226;.;.;Cook;.;.;.;.;Equatorial Guinea;GQ;GNQ;226;ISO 3166-2:GQ;Africa;Sub-Saharan Africa;Middle Africa;2;202;17
+227;.;.;Lebanon;.;.;.;.;.;.;.;.;.;.;.;.;.;.;.
