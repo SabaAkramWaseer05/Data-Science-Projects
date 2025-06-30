@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "ID3",
+    "range": 500,
+    "availability": [
+      {
+        "year": 2024,
+        "available": 5
+      },
+      {
+        "year": 2025,
+        "available": 8
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "EC40",
+    "range": 580,
+    "availability": [
+      {
+        "year": 2025,
+        "available": 6
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Ioniq5",
+    "range": 570,
+    "availability": [
+      {
+        "year": 2024,
+        "available": 11
+      },
+      {
+        "year": 2025,
+        "available": 13
+      }
+    ]
+  }
+]

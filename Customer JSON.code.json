@@ -1,0 +1,56 @@
+[
+  {
+    "id": 4,
+    "name": "Bob",
+    "rented": [
+      {
+        "vehicle_id": 1,
+        "vehicle_name": "ID3",
+        "days": 4,
+        "start": "01-10-2025"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Alice",
+    "rented": [
+      {
+        "vehicle_id": 2,
+        "vehicle_name": "EC40",
+        "days": 5,
+        "start": "02-10-2024"
+      },
+      {
+        "vehicle_id": 3,
+        "vehicle_name": "Ioniq5",
+        "days": 7,
+        "start": "04-03-2025"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Tom",
+    "rented": [
+      {
+        "vehicle_id": 3,
+        "vehicle_name": "Ioniq5",
+        "days": 3,
+        "start": "27-09-2024"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Ben",
+    "rented": [
+      {
+        "vehicle_id": 1,
+        "vehicle_name": "ID3",
+        "days": 11,
+        "start": "26-02-2025"
+      }
+    ]
+  }
+]
