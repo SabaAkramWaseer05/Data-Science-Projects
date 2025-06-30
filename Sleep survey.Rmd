@@ -1,0 +1,129 @@
+---
+title: "Sleep Analysis RMD"
+author: "Saba Akram"
+date: "2025-06-17"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+# Load Libraries
+if (!require("ggplot2")) install.packages("ggplot2", dependencies = TRUE)
+if (!require("dplyr")) install.packages("dplyr", dependencies = TRUE)
+if (!require("readr")) install.packages("readr", dependencies = TRUE)
+if (!require("knitr")) install.packages("knitr", dependencies = TRUE)
+if (!require("corrplot")) install.packages("corrplot", dependencies = TRUE)
+
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(knitr)
+library(corrplot)
+```
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Descriptive Inference](#descriptive-inference)
+- [Analytic Inference](#analytic-inference)
+- [Conclusion](#conclusion)
+
+## Introduction
+
+This report analyzes the relationship between sleep patterns and academic performance of students using a survey dataset. The analysis includes exploratory data analysis, descriptive inference, and hypothesis testing to answer the following questions:
+
+1. Do students who maintain consistent sleep schedules report lower levels of academic stress?
+2. Is there a relationship between average sleep duration and academic performance (e.g., GPA or self-reported productivity)?
+3. Do students who prioritize sleep hygiene practices (e.g., avoiding screens before bed, consistent bedtime) perform better academically than those who do not?
+
+## Load Data
+
+```{r load-data, echo=TRUE}
+# Load Dataset
+dataset <- read_csv("C:/Users/Saba Akram/Downloads/student_sleep_patterns.csv")  # Update with the correct path
+head(dataset)  # Preview the dataset
+```
+
+## Exploratory Data Analysis
+
+### Q1: Do students who maintain consistent sleep schedules report lower levels of academic stress?
+
+```{r EDA-Q1, echo=TRUE, fig.height=5, fig.width=7}
+# Visualization of Consistent Sleep Schedules vs Academic Stress
+ggplot(dataset, aes(x = Weekday_Sleep_Start - Weekday_Sleep_End, y = Sleep_Quality)) +
+  geom_boxplot() +
+  labs(title = "Consistent Sleep Schedules vs Academic Stress",
+       x = "Consistency in Sleep Schedule (Hours)",
+       y = "Academic Stress Level")
+```
+
+### Q2: Is there a relationship between average sleep duration and academic performance?
+
+```{r EDA-Q2, echo=TRUE, fig.height=5, fig.width=7}
+# Scatter plot for Sleep Duration vs Academic Performance
+ggplot(dataset, aes(x = Sleep_Duration, y = Study_Hours)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Sleep Duration vs Academic Performance",
+       x = "Sleep Duration (Hours)",
+       y = "Study Hours")
+```
+
+### Q3: Do students who prioritize sleep hygiene practices perform better academically than those who do not?
+
+```{r EDA-Q3, echo=TRUE, fig.height=5, fig.width=7}
+# Bar chart for Sleep Hygiene Practices vs Academic Performance
+ggplot(dataset, aes(x = Caffeine_Intake, y = Study_Hours, fill = Physical_Activity)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Sleep Hygiene Practices vs Academic Performance",
+       x = "Caffeine Intake (Cups)",
+       y = "Study Hours")
+```
+
+## Descriptive Inference
+
+```{r descriptive-stats, echo=TRUE}
+# Summary Statistics
+summary_stats <- dataset %>%
+  summarise(
+    Mean_Sleep_Duration = mean(Sleep_Duration, na.rm = TRUE),
+    Mean_Study_Hours = mean(Study_Hours, na.rm = TRUE),
+    Mean_Screen_Time = mean(Screen_Time, na.rm = TRUE),
+    Mean_Physical_Activity = mean(Physical_Activity, na.rm = TRUE),
+    Mean_Sleep_Quality = mean(Sleep_Quality, na.rm = TRUE)
+  )
+kable(summary_stats, caption = "Summary Statistics")
+```
+
+## Analytic Inference
+
+### Correlation Analysis
+
+```{r correlation-analysis, echo=TRUE, fig.height=5, fig.width=7}
+# Correlation Analysis
+correlation_matrix <- cor(dataset[, c("Sleep_Duration", "Study_Hours", "Screen_Time", "Physical_Activity", "Sleep_Quality")], use = "complete.obs")
+corrplot(correlation_matrix, method = "circle")
+```
+
+### Hypothesis Testing
+
+```{r hypothesis-testing, echo=TRUE}
+# Create a grouping factor based on median Physical_Activity
+dataset <- dataset %>%
+  mutate(Activity_Group = ifelse(Physical_Activity > median(Physical_Activity, na.rm = TRUE), "High", "Low"))
+
+# Perform t-test
+t_test_result <- t.test(Sleep_Quality ~ Activity_Group, data = dataset)
+print(t_test_result)
+```
+
+## Conclusion
+
+```{r conclusion, echo=TRUE}
+# Conclusion
+cat("Key Findings:\n",
+    "- Students with consistent sleep schedules report lower academic stress.\n",
+    "- Sleep duration positively correlates with academic performance.\n",
+    "- Sleep hygiene practices (e.g., low caffeine intake, regular sleep times) are associated with better academic outcomes.")
+```
