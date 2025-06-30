@@ -1,0 +1,468 @@
+@prefix : <http://www.semanticweb.org/sabaakram/ontologies/2024/10/untitled-ontology-7/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/sabaakram/ontologies/2024/10/untitled-ontology-7/> .
+
+<http://www.semanticweb.org/yourname/ontologies/movies'> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:comment "This class represents films, including all metadata related to them." .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdfs:label "Movie" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#belongsToGenre
+:belongsToGenre rdf:type owl:ObjectProperty ;
+                rdfs:domain :Movie ;
+                rdfs:range :Genre ;
+                rdfs:comment "This property indicates the genre category to which a particular entity, such as a movie or book, belongs." ;
+                rdfs:label "Belongs to Genre" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#collaboratedWith
+:collaboratedWith rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Actor ;
+                  rdfs:range :Actor ;
+                  rdfs:comment "This property is used to represent a collaboration between two or more entities, such as artists or organizations, on a particular project or work." ;
+                  rdfs:label "Collaborated With" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#directedBy
+:directedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Movie ;
+            rdfs:range :Director ;
+            rdfs:comment "This property specifies the director responsible for the creative direction of a film, play, or similar work." ;
+            rdfs:label "Directed By" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#fromCountry
+:fromCountry rdf:type owl:ObjectProperty ;
+             rdfs:domain :Actor ,
+                         :Director ;
+             rdfs:range :Country ;
+             rdfs:comment "This property indicates the country of origin for an entity, such as a person, organization, or product." ;
+             rdfs:label "Country" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#hasActor
+:hasActor rdf:type owl:ObjectProperty ;
+          rdfs:domain :Movie ;
+          rdfs:range :Actor ;
+          rdfs:comment "This property identifies the actor or actors who perform in a film, television show, or theatrical production." ;
+          rdfs:label "Has Actor" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#hasDirector
+:hasDirector rdf:type owl:ObjectProperty ;
+             rdfs:domain :Director ;
+             rdfs:range :Movie ;
+             rdfs:comment "This property denotes the director associated with a particular film, show, or other creative work." ;
+             rdfs:label "Has Director" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#hasLanguage
+:hasLanguage rdf:type owl:ObjectProperty ;
+             rdfs:domain :Movie ;
+             rdfs:range :Language ;
+             rdfs:comment "This property indicates the language or languages in which a work is available or has been produced." ;
+             rdfs:label "Has Language" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#hasUserAgeGroup
+:hasUserAgeGroup rdf:type owl:ObjectProperty ;
+                 rdfs:domain :User ;
+                 rdfs:range :AgeGroup .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#producedBy
+:producedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Movie ;
+            rdfs:range :Studio ;
+            rdfs:comment "This property identifies the producer or production company responsible for financing and overseeing the creation of a work." ;
+            rdfs:label "Produced By" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#similarTo
+:similarTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :Movie ;
+           rdfs:range :Movie ;
+           rdfs:comment "This property is used to express similarity between two entities, such as products, works, or concepts, based on certain attributes or characteristics." ;
+           rdfs:label "Similar To" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#wonAward
+:wonAward rdf:type owl:ObjectProperty ;
+          rdfs:domain :Movie ;
+          rdfs:range :Award ;
+          rdfs:comment "This property indicates that an entity, such as a film, book, or individual, has received a specific award or recognition." ;
+          rdfs:label "Won Award" .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain :Movie ;
+                      rdfs:range :Genre ;
+                      rdfs:comment "The most general property in the ontology hierarchy, typically used as a placeholder or superclass for all object properties." ;
+                      rdfs:label "Top Object Property" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#hasBoxOffice
+:hasBoxOffice rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Movie ;
+              rdfs:range xsd:float ;
+              rdfs:comment "This property represents the box office earnings of a movie, typically measured in currency." ;
+              rdfs:label "Has Box Office" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#hasRating
+:hasRating rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Movie ;
+           rdfs:range xsd:float ;
+           rdfs:comment "This property represents the box office earnings of a movie, typically measured in currency." ;
+           rdfs:label "Has Rating" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#hasReleaseYear
+:hasReleaseYear rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Movie ;
+                rdfs:range xsd:integer ;
+                rdfs:comment "This property specifies the year in which a movie, book, or other work was released or published." ;
+                rdfs:label "Has Release Year" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#hasReviewText
+:hasReviewText rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Review ;
+               rdfs:range xsd:string ;
+               rdfs:comment "This property contains the textual content of a review, providing feedback or opinions on a particular work or product." ;
+               rdfs:label "Has Review Text" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#hasUserAgeGroup
+:hasUserAgeGroup rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :User ;
+                 rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Actor
+:Actor rdf:type owl:Class ;
+       owl:disjointWith :Director ;
+       rdfs:comment "An individual who performs in movies, playing various roles." .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#AgeGroup
+:AgeGroup rdf:type owl:Class ;
+          rdfs:comment "Categorizes viewers based on age, such as children, teens, and adults, for content suitability." ;
+          rdfs:label "Age Group" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Award
+:Award rdf:type owl:Class ;
+       rdfs:comment "Recognition given to movies or individuals for excellence in cinematic achievements." ;
+       rdfs:label "Awards" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#AwardWinningMovie
+:AwardWinningMovie rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :wonAward ;
+                                         owl:someValuesFrom :Award
+                                       ] ;
+                   rdfs:subClassOf :Movie ;
+                   rdfs:label "Award-Winning Movie" ,
+                              "This concept represents movies that have received one or more awards, recognizing their excellence in various aspects such as acting, directing, or technical achievements." .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Blockbuster
+:Blockbuster rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Class ;
+                                   owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasBoxOffice ;
+                                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                        owl:onDatatype xsd:float ;
+                                                                        owl:withRestrictions ( [ xsd:minInclusive "5.0E8"^^xsd:float
+                                                                                               ]
+                                                                                             )
+                                                                      ]
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasRating ;
+                                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                        owl:onDatatype xsd:float ;
+                                                                        owl:withRestrictions ( [ xsd:minInclusive "8.0"^^xsd:float
+                                                                                               ]
+                                                                                             )
+                                                                      ]
+                                                 ]
+                                               )
+                                 ] ;
+             rdfs:subClassOf :Movie ;
+             rdfs:comment "This concept refers to movies that have achieved significant commercial success, often characterized by high box office earnings and widespread popularity." ;
+             rdfs:label "Blockbuster" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Box_Office
+:Box_Office rdf:type owl:Class ;
+            rdfs:comment "Represents the total revenue generated by a movie from ticket sales." ;
+            rdfs:label "Box Office" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Collaboration
+:Collaboration rdf:type owl:Class ;
+               rdfs:comment "Represents the working relationship between actors or directors on a movie project." ;
+               rdfs:label "Collaboration" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Country
+:Country rdf:type owl:Class ;
+         rdfs:comment "The nation where a movie is produced or distributed." ;
+         rdfs:label "Country" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :directedBy ;
+                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Director
+                          ] ;
+          rdfs:comment "A person responsible for overseeing the artistic and dramatic aspects of a movie." ;
+          rdfs:label "Director" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Genre
+:Genre rdf:type owl:Class ;
+       rdfs:comment "A category of movies characterized by similarities in form, style, or subject matter." ;
+       rdfs:label "Genre" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Language
+:Language rdf:type owl:Class ;
+          rdfs:comment "Indicates the primary language spoken in a movie." ;
+          rdfs:label "Language" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Movie
+:Movie rdf:type owl:Class ;
+       rdfs:comment "Represents a cinematic production, including feature films, documentaries, and short films." ;
+       rdfs:label "Movie" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasActor ;
+                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Actor
+                        ] ;
+        rdfs:comment "An evaluation score given to a movie by users or critics, often on a scale of 1 to 10." ;
+        rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#ReleaseYear
+:ReleaseYear rdf:type owl:Class ;
+             rdfs:comment "The year in which a movie was officially released to the public." ;
+             rdfs:label "Release Year" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Review
+:Review rdf:type owl:Class ;
+        rdfs:comment "A written or spoken evaluation of a movie, typically including a summary and critique." ;
+        rdfs:label "Review" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Studio
+:Studio rdf:type owl:Class ;
+        rdfs:comment "A company or organization involved in the production and distribution of movies." ;
+        rdfs:label "Studio" .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#User
+:User rdf:type owl:Class ;
+      rdfs:comment "An individual who interacts with the movie database, providing ratings or reviews." ;
+      rdfs:label "User" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Action
+:Action rdf:type owl:NamedIndividual ,
+                 :Genre .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Adult
+:Adult rdf:type owl:NamedIndividual ,
+                :AgeGroup ;
+       rdfs:comment "Refers to an age group typically 18 and over, used for content rating and demographic analysis." .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#China
+:China rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#ChristopherNolan
+:ChristopherNolan rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Comedy
+:Comedy rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Disney
+:Disney rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Drama
+:Drama rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#English
+:English rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#France
+:France rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#French
+:French rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Hindi
+:Hindi rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Inception
+:Inception rdf:type owl:NamedIndividual ,
+                    :Movie ;
+           :belongsToGenre :Action ;
+           :hasRating "8.8"^^xsd:float ;
+           :hasUserAgeGroup 3 ,
+                            1 ,
+                            2 .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#India
+:India rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#KathrynBigelow
+:KathrynBigelow rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Mandarin
+:Mandarin rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#MartinScorsese
+:MartinScorsese rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Paramount
+:Paramount rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#PulpFiction
+:PulpFiction rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#QuentinTarantino
+:QuentinTarantino rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#SciFi
+:SciFi rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Senior
+:Senior rdf:type owl:NamedIndividual ,
+                 :AgeGroup ;
+        rdfs:comment "Refers to an age group typically over 65, used for demographic analysis." .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Spanish
+:Spanish rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#StevenSpielberg
+:StevenSpielberg rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Teen
+:Teen rdf:type owl:NamedIndividual ,
+               :AgeGroup ;
+      rdfs:comment "Refers to an age group typically between 13 and 19 years old, used for content rating." .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#TheDarkKnight
+:TheDarkKnight rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#TheGodfather
+:TheGodfather rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Thriller
+:Thriller rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#Titanic
+:Titanic rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#UK
+:UK rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#USA
+:USA rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#UniversalPictures
+:UniversalPictures rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#WarnerBros
+:WarnerBros rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/yourname/ontologies/movies'#20thCenturyFox
+<http://www.semanticweb.org/yourname/ontologies/movies'#20thCenturyFox> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasUserAgeGroup rdfs:comment "This property denotes the age group category applicable to a user or audience, often used for demographic analysis or content suitability." ;
+                 rdfs:label "User Age Group" .
+
+
+owl:topDataProperty rdfs:comment "The most general data property in the ontology hierarchy, typically used as a placeholder or superclass for all data properties." ;
+                    rdfs:label "Top Data Property" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
