@@ -1,12 +1,12 @@
 ---
-title: "Case study 3: Visualization - AKSTA Statistical Computing"
+title: "Case Study 3: Visualization - AKSTA Statistical Computing"
 author: "Zuhaib Sultan"
-date: "2025-05-22"
-output:
-  pdf_document: default
+output: 
+  pdf_document:
+    toc: true
   html_document:
-    df_print: paged
-  word_document: default
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
