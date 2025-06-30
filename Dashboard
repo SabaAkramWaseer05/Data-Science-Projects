@@ -1,0 +1,145 @@
+# ---
+# jupyter:
+#   jupytext:
+#     text_representation:
+#       extension: .py
+#       format_name: light
+#       format_version: '1.5'
+#       jupytext_version: 1.16.4
+#   kernelspec:
+#     display_name: Python 3 (ipykernel)
+#     language: python
+#     name: python3
+# ---
+
+# +
+# Install required libraries before running
+# pip install dash plotly pandas
+
+import dash
+from dash import dcc, html, Input, Output
+import pandas as pd
+import plotly.express as px
+
+# Sample dataset: Replace with your own dataset as needed
+df = px.data.gapminder()
+
+# Initialize the Dash app
+app = dash.Dash(__name__)
+
+# App layout
+app.layout = html.Div(
+    [
+        html.H1("Interactive Dashboard", style={"text-align": "center"}),
+
+        # Dropdown for filtering by continent
+        html.Div(
+            [
+                html.Label("Select Continent:"),
+                dcc.Dropdown(
+                    id="continent-dropdown",
+                    options=[
+                        {"label": continent, "value": continent}
+                        for continent in df["continent"].unique()
+                    ],
+                    value="Asia",
+                    placeholder="Select a Continent",
+                    multi=False,
+                ),
+            ],
+            style={"width": "40%", "margin": "auto"},
+        ),
+
+        # Range slider for filtering by year
+        html.Div(
+            [
+                html.Label("Select Year Range:"),
+                dcc.RangeSlider(
+                    id="year-slider",
+                    min=df["year"].min(),
+                    max=df["year"].max(),
+                    marks={year: str(year) for year in df["year"].unique()},
+                    step=5,
+                    value=[df["year"].min(), df["year"].max()],
+                ),
+            ],
+            style={"width": "80%", "margin": "auto", "margin-top": "20px"},
+        ),
+
+        # Visualization outputs
+        html.Div(
+            [
+                dcc.Graph(id="line-chart"),
+                dcc.Graph(id="bar-chart"),
+                dcc.Graph(id="scatter-plot"),
+                dcc.Graph(id="pie-chart"),
+            ],
+            style={"margin-top": "20px"},
+        ),
+    ]
+)
+
+# Callbacks for interactivity
+@app.callback(
+    [
+        Output("line-chart", "figure"),
+        Output("bar-chart", "figure"),
+        Output("scatter-plot", "figure"),
+        Output("pie-chart", "figure"),
+    ],
+    [
+        Input("continent-dropdown", "value"),
+        Input("year-slider", "value"),
+    ],
+)
+def update_charts(selected_continent, selected_years):
+    # Filter data based on user input
+    filtered_data = df[
+        (df["continent"] == selected_continent)
+        & (df["year"] >= selected_years[0])
+        & (df["year"] <= selected_years[1])
+    ]
+
+    # Line Chart
+    line_chart = px.line(
+        filtered_data,
+        x="year",
+        y="gdpPercap",
+        color="country",
+        title="GDP Per Capita Over Years",
+    )
+
+    # Bar Chart
+    bar_chart = px.bar(
+        filtered_data,
+        x="country",
+        y="pop",
+        color="country",
+        title="Population by Country",
+    )
+
+    # Scatter Plot
+    scatter_plot = px.scatter(
+        filtered_data,
+        x="gdpPercap",
+        y="lifeExp",
+        color="country",
+        size="pop",
+        title="Life Expectancy vs GDP Per Capita",
+# Run the app
+    )
+
+    # Pie Chart
+    pie_chart = px.pie(
+        filtered_data,
+        values="pop",
+        names="country",
+        title="Population Distribution",
+    )
+
+    return line_chart, bar_chart, scatter_plot, pie_chart
+
+
+if __name__ == "__main__":
+    app.run_server(debug=True)
+
